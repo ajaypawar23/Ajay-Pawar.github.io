@@ -473,38 +473,17 @@
 			<div class="col-twelve">
 
 				<!-- form -->
-				<form name="form" id="contactForm" method="POST" action="https://formspree.io/f/xvoyenpo">
-					<fieldset>
-						<div class="form-field">
-							<input name="name" type="text" id="contactName" placeholder="Enter your Name" value="" minlength="2"
-								required="">
-						</div>
-						<div class="form-field">
-							<input name="_replyto" type="email" id="contactEmail" placeholder="Enter your Email" value=""
-								required="">
-						</div>
-						<div class="form-field">
-							<input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="">
-						</div>
-						<div class="form-field">
-							<textarea name="message" id="contactMessage" placeholder="Type your Message" rows="10" cols="50"
-								required=""></textarea>
-						</div>
-						<div class="form-field">
-							<button class="submitform" type="reset" name="submit">Reset</button>
-							<button class="submitform" name="submit">Submit</button>
-							<div id="submit-loader">
-								<div class="text-loader">Sending...</div>
-								<div class="s-loader">
-									<div class="bounce1"></div>
-									<div class="bounce2"></div>
-									<div class="bounce3"></div>
-								</div>
-							</div>
-						</div>
-
-					</fieldset>
-				</form>
+			<form action="https://formspree.io/f/xvoyenpo" method="POST">
+  				<label>Your email:
+    				<input type="email" name="email">
+  				</label>
+  				<label>
+    					Your message:
+    					<textarea name="message"></textarea>
+  				</label>
+ 				 <!-- your other form fields go here -->
+  				<button type="submit">Send</button>
+			</form>
 
 				<!-- contact-warning -->
 				<div id="message-warning">
